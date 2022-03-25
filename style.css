@@ -52,6 +52,12 @@ ul{
     border-radius: 0.25rem;
     color: #000;
     text-transform: uppercase;
+    border: 0.125rem solid transparent;
+}
+
+/*Configurando para mudar a cor da borda quando a seta do mouse estiver por cima do "a" no menu*/
+.menu a:hover{
+    border-color: #E21;
 }
 
 .conteudo{
@@ -75,7 +81,8 @@ ul{
     font-size: 2rem;
 }
 
-.detalhe{
+.introducao:before{
+    content: "";
     width: 4rem;
     height: 0.25rem;
     background-color: #E21;
@@ -84,12 +91,16 @@ ul{
     right: -2rem;
 }
 
-.introducao a{
+.botao{
     background-color: #E21;
     color: #FFF;
     padding: 1rem 2rem;
     border-radius: 0.25rem;
     text-transform: uppercase;
+}
+
+.botao:hover{
+    background-color: #900;
 }
 
 .subtitulo{
@@ -99,6 +110,7 @@ ul{
     text-align: right;
     padding: 2.5rem;
     align-self: center;
+    background-image: url("./img/onda.svg");
 }
 
 .vantagens{
@@ -111,6 +123,14 @@ ul{
     grid-template-columns: auto 1fr;
     gap: 0.625rem 1.25rem;
     padding: 1.25rem;
+}
+
+.vantagens-item:nth-child(odd){
+    background-color: #F7F7F7;
+}
+
+.vantagens-item:hover{
+    border-left: 0.250rem solid #E21;
 }
 
 .vantagens-item p{
