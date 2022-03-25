@@ -6,6 +6,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- Informando que esse site pode ser aberto em smartphones -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Bikcraft</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -47,12 +49,15 @@
 
                 </div>
 
-                <img src="./img/bicicleta.jpg" alt="Bicicleta Bikcraft Preta">
-            
+                <!-- A tag objectfit funciona melhor dentro de uma div-->
+                <div class="introducao-cover">
+                    <img src="./img/bicicleta.jpg" alt="Bicicleta Bikcraft Preta">
+                </div>    
+
             </article>
 
             <!-- Colocando etiquetas nos titulos -->
-            <article class="conteudo" aria-labelledby="label-vantagens">
+            <article class="conteudo conteudo-vantagens" aria-labelledby="label-vantagens">
 
                 <h2 id="label-vantangens" class="subtitulo">Vantagens Bikcraft</h2>
 

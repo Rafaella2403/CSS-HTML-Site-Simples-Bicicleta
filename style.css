@@ -91,6 +91,11 @@ ul{
     right: -2rem;
 }
 
+.introducao-cover img{
+    object-fit: cover;
+    height: 100%;
+}
+
 .botao{
     background-color: #E21;
     color: #FFF;
@@ -143,4 +148,48 @@ ul{
     width: 100%;
     box-sizing: border-box;
     text-align: center;
+}
+
+/* Criando os pontos de quebra para o responsivo*/
+@media (max-width: 1000px){
+   
+    .conteudo-vantagens{
+        grid-template-columns: 1fr;
+
+    }
+
+    .subtitulo{
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px){
+    
+    body{
+        gap: 2rem;
+        margin-top: 1.25rem;
+    }
+
+    .header{
+        gap: 2rem;
+    }
+
+    .conteudo{
+        grid-template-columns: 1fr;
+
+    }
+
+    .introducao::before{
+        display: none;
+    }
+
+    .introducao{
+        text-align: center;
+        justify-items: start;
+    }
+
+    .subtitulo{
+        text-size: 3rem;
+    }
+
 }
